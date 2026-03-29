@@ -6,12 +6,43 @@
     <title>Acerca de mí - Mi Blog</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/styles.css">
+    <!-- Favicon estándar (HTML5) -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/alvatroz-icon.png">
 </head>
 <body>
-    <!-- Navbar (copiar de index.html) -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-primary sticky-top">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top barra-nav">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html">Mi Blog</a>
+            <a class="navbar-brand fw-bold d-flex align-items-center barra-nav-marca" href="index.html">
+                <img src="assets/images/alvatroz-icon.png" alt="Logo de alvatoz untdf" width="50" height="40" class="me-2">
+                Mi Blog
+            </a>
+
+            <button class="navbar-toggler" aria-label="Cambiar navegación" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Sobre mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contacto</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                            Recursos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="mailto:elias.n.alegre2601@gmail.com">Enviar Mail</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="https://github.com/repos?q=owner%3A%40me">GitHub Proyectos</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
@@ -19,18 +50,26 @@
     <main class="py-5">
         <div class="container">
             <div class="row">
-                <!-- Sidebar: Avatar (COMPLETAR) -->
-                <aside class="col-md-3 mb-4">
-                    <img src="assets/images/avatar.jpg" class="img-fluid rounded-circle mb-3" alt="Avatar" style="max-width: 200px;">
-                    <h3>Tu Nombre</h3>
-                    <p class="text-muted">Desarrollador web &amp; escritor</p>
+                <!-- Sidebar -->
+                <aside class="col-md-3 mb-4 data-extra">
+                    <img src="assets/images/foto-perfil.jpeg" class="img-fluid rounded-circle mb-3 data-extra-img" alt="Avatar">
+                    <h3>Elias Nahuel Alegre</h3>
+                    <p class="text-muted">Desarrollador Backend &amp; bjj-fighter</p>
                 </aside>
 
-                <!-- Contenido principal (COMPLETAR) -->
+                <!-- Contenido principal -->
                 <article class="col-md-9">
                     <h1>Acerca de mí</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                    <!-- TODO: agregar más párrafos, habilidades, etc. -->
+                    <p>Desarrollador de Software en formación. 
+                        Especializado en Java y Python con enfoque en buenas prácticas de diseño (POO, Patrones). 
+                        Capacidad para gestionar el ciclo de vida completo del desarrollo con enfoque en metodologías ágiles, 
+                        desde la toma de requerimientos (UML/IEEE 830) hasta la implementación en base de datos (PostgreSQL) 
+                        con buen manejo del flujo de trabajo con Git.
+                        Actualmente curso el tercer año de la Licenciatura en Sistemas en la Universidad Nacional de Tierra del Fuego (UNTDF), 
+                        camino al título intermedio de Analista. Además de mi formación académica, 
+                        participo activamente en el Laboratorio de Electrónica Aplicada y Biomedicina (LEAB), 
+                        donde aplico Python para interactuar con hardware, específicamente procesando datos de bioimpedancia de placas de adquisición. 
+                        También tengo experiencia técnica práctica en la reparación y mantenimiento de dispositivos móviles.</p>
                 </article>
             </div>
         </div>
@@ -38,8 +77,32 @@
 
     <!-- Footer -->
     <footer class="bg-dark text-white py-4 mt-5">
-        <div class="container text-center">
-            <p>&copy; 2026 Mi Blog.</p>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-8">
+                    <p>&copy; 2026 E. Alegre. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-12 col-md-4">
+                    <h4 class="mb-3">Redes Sociales</h4>
+                    <ul class="list-unstyled d-flex gap-3">
+                        <li>
+                            <a rel="noopener noreferrer" href="https://www.instagram.com/alegrelias__26/" target="_blank">
+                                <img src="assets/images/instagram-logo.png" alt="Instagram" width="30" class="img-fluid">
+                            </a>
+                        </li>
+                        <li>
+                            <a rel="noopener noreferrer" href="https://www.facebook.com/people/Elias-Nahuel-Alegre/pfbid0nuX611n5reYaH5HmhbvYDcewpAABdTg3oxbBu8KJ7ea4FGCfVXRMbCDWyB3dMTDGl/" target="_blank">
+                                <img src="assets/images/Facebook-White-Logo.png" alt="Facebook" width="30" class="img-fluid">
+                            </a>
+                        </li>
+                        <li>
+                            <a rel="noopener noreferrer" href="https://github.com/alegrelias" target="_blank">
+                                <img src="assets/images/white-github-icon.png" alt="GitHub" width="30" class="img-fluid">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </footer>
 

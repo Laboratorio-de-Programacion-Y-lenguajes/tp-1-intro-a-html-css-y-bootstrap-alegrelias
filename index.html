@@ -8,21 +8,51 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- CSS personalizado -->
     <link rel="stylesheet" href="assets/styles.css">
+    <!-- Favicon estándar (HTML5) -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/alvatroz-icon.png">
 </head>
 <body>
-    <!-- Navbar (COMPLETAR: agregar logo, links activos, menú colapsable) -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-primary sticky-top">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top barra-nav">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html">Mi Blog</a>
-            <!-- TODO: agregar toggler y nav-items -->
+            <a class="navbar-brand fw-bold d-flex align-items-center barra-nav-marca" href="index.html">
+                <img src="assets/images/alvatroz-icon.png" alt="Logo de alvatoz untdf" width="50" height="40" class="me-2">
+                Mi Blog
+            </a>
+
+            <button class="navbar-toggler" aria-label="Cambiar navegación" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Sobre mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contacto</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                            Recursos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="mailto:elias.n.alegre2601@gmail.com">Enviar Mail</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="https://github.com/repos?q=owner%3A%40me">GitHub Proyectos</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
     <!-- Hero section -->
-    <header class="bg-gradient text-white py-5">
+    <header class="bg-gradient py-5 hero-gradient">
         <div class="container text-center">
-            <h1 class="display-4">Bienvenido a Mi Blog</h1>
-            <p class="lead">Historias, tecnología y reflexiones</p>
+            <h1 class="display-4">Bienvenido humano</h1>
+            <p class="lead">Las soluciones tecnologicas mas australes del mundo</p>
         </div>
     </header>
 
@@ -31,29 +61,77 @@
         <div class="container">
             <h2 class="mb-4">Artículos Recientes</h2>
 
-            <!-- Grid de tarjetas (COMPLETAR: 3+ artículos) -->
+            <!-- Grid de tarjetas -->
             <div class="row">
                 <div class="col-md-4 mb-4">
-                    <div class="card h-100 shadow-sm">
-                        <img src="assets/images/article-1.jpg" class="card-img-top" alt="Artículo 1">
+                    <article class="card h-100 shadow-sm tarjeta-articulo">
+                        <img src="assets/images/arduino-placa.webp" class="card-img-top tarjeta-articulo-img-top" alt="Placa arduino">
                         <div class="card-body">
-                            <h5 class="card-title">Primer Artículo</h5>
-                            <p class="card-text text-muted">Autor: Tu Nombre</p>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                            <a href="#" class="btn btn-primary btn-sm">Leer más</a>
+                            <h5 class="card-title">Placas de montaje superficial</h5>
+                            <p class="card-text text-muted">Autor: Elias Alegre</p>
+                            <p class="card-text">Actualmente me formo en el manejo adecuado de placas de montaje superficial, desde el soldado y desoldado de sus componentes hasta su programación en entornos adecuados</p>
+                            <a href="https://wiki.analog.com/resources/eval/user-guides/circuits-from-the-lab/cn0565" class="btn btn-sm btn-verde">Leer más</a>
                         </div>
-                    </div>
+                    </article>
                 </div>
-                <!-- TODO: agregar 2 más -->
+
+                <div class="col-md-4 mb-4">
+                    <article class="card h-100 shadow-sm tarjeta-articulo">
+                        <img src="assets/images/code-screen.jpg" class="card-img-top tarjeta-articulo-img-top" alt="Pantalla de codigo python">
+                        <div class="card-body">
+                            <h5 class="card-title">Desarrollo Backend</h5>
+                            <p class="card-text text-muted">Autor: Elias Alegre</p>
+                            <p class="card-text">Me desempeño en el desarrollo de software, contemplando todo su ciclo de vida desde una perspectiva de metodologias ágiles y modernas, hasta llegar a una implementación en lenguajes robustos y adecuados.</p>
+                            <a href="https://github.com/alegrelias/final_pydoo_2026" class="btn btn-sm btn-verde">Leer más</a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <article class="card h-100 shadow-sm tarjeta-articulo">
+                        <img src="assets/images/broke-mobile.jpg" class="card-img-top tarjeta-articulo-img-top" alt="Telefono desmontado">
+                        <div class="card-body">
+                            <h5 class="card-title">Reparacion de celulares y tablets</h5>
+                            <p class="card-text text-muted">Autor: Elias Alegre</p>
+                            <p class="card-text">Soy técnico en la reparación de celulares y tablets. Tengo experiencia reviviendo baterias y reemplazando modulos dañados.</p>
+                            <!--Agregar link hacia algun lugar-->
+                            <a href="https://www.klassinstitute.com/cursos-1/reparaci%C3%B3n-de-celulares" class="btn btn-sm btn-verde">Leer más</a>
+                        </div>
+                    </article>
+                </div>
+
             </div>
         </div>
     </main>
 
     <!-- Footer -->
     <footer class="bg-dark text-white py-4 mt-5">
-        <div class="container text-center">
-            <p>&copy; 2026 Mi Blog. Todos los derechos reservados.</p>
-            <!-- TODO: agregar redes sociales -->
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-8">
+                    <p>&copy; 2026 E. Alegre. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-12 col-md-4">
+                    <h4 class="mb-3">Redes Sociales</h4>
+                    <ul class="list-unstyled d-flex gap-3">
+                        <li>
+                            <a rel="noopener noreferrer" href="https://www.instagram.com/alegrelias__26/" target="_blank">
+                                <img src="assets/images/instagram-logo.png" alt="Instagram" width="30" class="img-fluid">
+                            </a>
+                        </li>
+                        <li>
+                            <a rel="noopener noreferrer" href="https://www.facebook.com/people/Elias-Nahuel-Alegre/pfbid0nuX611n5reYaH5HmhbvYDcewpAABdTg3oxbBu8KJ7ea4FGCfVXRMbCDWyB3dMTDGl/" target="_blank">
+                                <img src="assets/images/Facebook-White-Logo.png" alt="Facebook" width="30" class="img-fluid">
+                            </a>
+                        </li>
+                        <li>
+                            <a rel="noopener noreferrer" href="https://github.com/alegrelias" target="_blank">
+                                <img src="assets/images/white-github-icon.png" alt="GitHub" width="30" class="img-fluid">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </footer>
 

@@ -1,8 +1,17 @@
+/* ===== Cambio la fuente ====== */
+@font-face {
+    font-family: "TT Supermolot Neue";
+    src: url('fonts/tt-supermolot-group/TTSupermolotNeue-Regular.woff2') format('woff2'),
+         url('fonts/tt-supermolot-group/TTSupermolotNeue-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* ===== Variables CSS ===== */
 :root {
-    --primary-color: #0d6efd;
+    --primary-color: #294e3f;
     --text-color: #212529;
-    --light-bg: #f8f9fa;
+    --light-bg: #bddc94;
     --border-color: #dee2e6;
 }
 
@@ -18,9 +27,10 @@ html {
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-family: "TT Supermolot Neue", sans-serif;
     line-height: 1.6;
     color: var(--text-color);
+    background-color: var(--light-bg);
 }
 
 /* ===== Tipografía ===== */
@@ -35,59 +45,67 @@ a {
 }
 
 /* ===== Navbar ===== */
-.navbar {
+
+.barra-nav{
+    background-color: var(--primary-color);
     box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
 }
 
-.navbar-brand {
+.barra-nav-marca{
     font-size: 1.5rem;
     letter-spacing: 0.5px;
 }
 
-.navbar-brand:hover {
+.barra-nav-marca:hover{
     opacity: 0.8;
 }
 
 /* ===== Hero Section ===== */
-.bg-gradient {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+
+.hero-gradient{
+    background: linear-gradient(135deg, #294e3f 0%, #7ea470 100%);
 }
 
 /* ===== Cards ===== */
-.card {
+.tarjeta-articulo{
+    background-color: #7ea470;
     border: none;
     border-radius: 8px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card:hover {
+.tarjeta-articulo:hover{
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgb(0 0 0 / 15%) !important;
 }
 
-.card-img-top {
+.tarjeta-articulo-img-top{
     height: 200px;
     object-fit: cover;
     border-radius: 8px 8px 0 0;
 }
 
 /* ===== Botones ===== */
-.btn {
+.btn-verde {
     border-radius: 6px;
     font-weight: 500;
+    color: white;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
     transition: all 0.3s ease;
 }
 
-.btn-primary {
-    background-color: var(--primary-color);
-    border-color: var(--primary-color);
+.btn-verde:hover {
+    background-color: #4c7558; /* El verde intermedio que elegiste */
+    border-color: #bddc94;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgb(41 78 63 / 30%);
 }
 
-.btn-primary:hover {
-    background-color: #0b5ed7;
-    border-color: #0b5ed7;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgb(13 110 253 / 30%);
+/* ===== Sobre mi ===== */
+.data-extra-img{
+    max-width: 200px;
 }
 
 /* ===== Formulario ===== */
