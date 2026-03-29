@@ -105,6 +105,11 @@ a {
     box-shadow: 0 4px 8px rgb(41 78 63 / 30%);
 }
 
+/* ===== Sobre mi ===== */
+.data-extra-img{
+    max-width: 200px;
+}
+
 /* ===== Formulario ===== */
 .form-control {
     border: 1px solid var(--border-color);
