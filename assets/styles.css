@@ -1,4 +1,4 @@
-/* ===== Cambiio la fuente ======*/
+/* ===== Cambio la fuente ====== */
 @font-face {
     font-family: "TT Supermolot Neue";
     src: url('fonts/tt-supermolot-group/TTSupermolotNeue-Regular.woff2') format('woff2'),
@@ -51,12 +51,12 @@ a {
     box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
 }
 
-.barra-nav__marca{
+.barra-nav-marca{
     font-size: 1.5rem;
     letter-spacing: 0.5px;
 }
 
-.barra-nav__marca:hover{
+.barra-nav-marca:hover{
     opacity: 0.8;
 }
 
@@ -79,26 +79,26 @@ a {
     box-shadow: 0 8px 16px rgb(0 0 0 / 15%) !important;
 }
 
-.tarjeta-articulo__img-top{
+.tarjeta-articulo-img-top{
     height: 200px;
     object-fit: cover;
     border-radius: 8px 8px 0 0;
 }
 
 /* ===== Botones ===== */
-.tarjeta-articulo__btn{
+.tarjeta-articulo-btn{
     border-radius: 6px;
     font-weight: 500;
     transition: all 0.3s ease;
 }
 
-.tarjeta-articulo__btn-primary {
+.tarjeta-articulo-btn-primary {
     color: white;
     background-color: var(--primary-color);
     border-color: var(--primary-color);
 }
 
-.tarjeta-articulo__btn-primary:hover {
+.tarjeta-articulo-btn-primary:hover {
     background-color: #bddc94;
     border-color: #bddc94;
     transform: translateY(-2px);
